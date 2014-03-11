@@ -20,6 +20,7 @@ Create symbolic links:
 
     cd ~
     ln -s .config/bash/bash_logout .bash_logout
+    ln -s .config/bash/bash_profile .bash_profile
     ln -s .config/bash/bashrc .bashrc
     ln -s .config/bash/dircolors .dircolors
     ln -s .config/bash/git-prompt.conf .git-prompt.conf
