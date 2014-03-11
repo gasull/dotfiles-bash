@@ -5,14 +5,16 @@ My ~/.bashrc, aliases, ~/inputrc and more
 
 ## Installation
 
-Create bash directory in XDG structure:
-
-    cd ~
-    mkdir .config/bash
-
 Clone the repo:
 
+    mkdir ~/src
+    cd ~/src
     git clone https://github.com/gasull/dotfiles-bash.git
+
+Create bash directory in XDG structure:
+
+    cd ~/.config
+    ln -s ~/src/dotfiles-bash/bash 
 
 Create symbolic links:
 
