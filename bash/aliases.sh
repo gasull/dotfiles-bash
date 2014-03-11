@@ -6,4 +6,3 @@ alias mc='mc -s'
 alias ooffice='libreoffice'
 alias psg='ps aux | grep'
 alias xv='geeqie'
-
