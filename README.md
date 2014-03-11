@@ -3,7 +3,7 @@ dotfiles-bash
 
 My ~/.bashrc, aliases, ~/inputrc and more
 
-# Installation
+## Installation
 
 Create bash directory in XDG structure:
 
@@ -27,4 +27,4 @@ Add dependencies:
 
     cd ~/.config/bash
     mkdir bundle
-#TODO
+    (TODO)
