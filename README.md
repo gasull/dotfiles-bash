@@ -27,4 +27,6 @@ Add dependencies:
 
     cd ~/.config/bash
     mkdir bundle
-    (TODO)
+    cd bundle
+    git clone https://github.com/lvv/git-prompt.git
+    git clone https://github.com/seebi/dircolors-solarized.git
