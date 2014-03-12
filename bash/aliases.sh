@@ -3,8 +3,24 @@ alias :Gcommit='git commit'
 alias :Gstatus='git status'
 alias :Gw='git add'
 
-alias ack='ag'
-alias ack-grep='ag'
+# Use the best code searching tool money can buy
+if [ -x /usr/bin/ag ] ; then
+    alias ack='ag'
+    alias ack-grep='ag'
+    alias egrep='ag'
+else
+    if [ -x /usr/bin/ack-grep ] ; then
+        alias ag='ack-grep'
+        alias egrep='ack-grep'
+        # Old systems don't have ack
+        alias ack='ack-grep'
+    else
+        alias ag='egrep'
+        alias ack='egrep'
+        alias ack-grep='egrep'
+    fi
+fi
+
 alias cd..='cd ..'
 alias lla='ls -la'
 # Makes Midnight Commander even faster
