@@ -114,6 +114,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ -f $XDG_CONFIG_HOME/bash/bashrc_local ]; then
-    . $XDG_CONFIG_HOME/bash/bashrc_local
+if [ -f $XDG_CONFIG_HOME/bash/bashrc_local.sh ]; then
+    . $XDG_CONFIG_HOME/bash/bashrc_local.sh
 fi
