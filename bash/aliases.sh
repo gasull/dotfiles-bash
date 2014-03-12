@@ -1,3 +1,6 @@
+alias :Gcommit='git commit'
+alias :Gstatus='git status'
+alias :Gw='git add'
 alias ack='ag'
 alias ack-grep='ag'
 alias cd..='cd ..'
