@@ -34,4 +34,4 @@ Add dependencies:
     git clone https://github.com/lvv/git-prompt.git
     git clone https://github.com/seebi/dircolors-solarized.git
 
-TODO: install dotfiles-vim
+Install [dotfiles-vim](https://github.com/gasull/dotfiles-vim).
