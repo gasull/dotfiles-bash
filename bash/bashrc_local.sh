@@ -5,7 +5,7 @@ source ~/.config/bash/bundle/git-prompt/git-prompt.sh
 set -o vi
 
 # virtualenvs
-if [ -x /etc/bash_completion.d/virtualenvwrapper] ; then
+if [ -x /etc/bash_completion.d/virtualenvwrapper ] ; then
     source /etc/bash_completion.d/virtualenvwrapper
 fi
 
