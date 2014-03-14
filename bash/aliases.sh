@@ -1,8 +1,3 @@
-# Like in vim-fugitive
-alias :Gcommit='git commit'
-alias :Gstatus='git status'
-alias :Gw='git add'
-
 # Use the best code searching tool money can buy
 if [ -x /usr/bin/ag ] ; then
     alias ack='ag'
@@ -22,6 +17,12 @@ else
 fi
 
 alias cd..='cd ..'
+
+# Like in vim-fugitive
+alias gcommit='git commit'
+alias gstatus='git status'
+alias gw='git add'
+
 alias lla='ls -la'
 # Makes Midnight Commander even faster
 alias mc='mc -s'
