@@ -27,6 +27,9 @@ alias lla='ls -la'
 # Makes Midnight Commander even faster
 alias mc='mc -s'
 alias md='mkdir'
+nd() {
+    mkdir $@; cd $1;
+}
 alias ooffice='libreoffice'
 # Low volume to play music on top
 alias pinknoise='play -n synth 1440:00 pinknoise vol 0.01'
