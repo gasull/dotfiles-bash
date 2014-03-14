@@ -25,10 +25,11 @@ alias cd..='cd ..'
 alias lla='ls -la'
 # Makes Midnight Commander even faster
 alias mc='mc -s'
+alias md='mkdir'
 alias ooffice='libreoffice'
 # Low volume to play music on top
 alias pinknoise='play -n synth 1440:00 pinknoise vol 0.01'
 alias psg='ps aux | grep'
-# Works as the old MS-DOS tree command
+# Works like the old MS-DOS tree command
 alias tree='tree -d'
 alias xv='geeqie'
