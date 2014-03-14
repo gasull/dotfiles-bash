@@ -14,7 +14,7 @@ Clone the repo:
 Create bash directory in XDG structure:
 
     cd ~/.config
-    ln -s ~/src/dotfiles-bash/bash 
+    ln -s ~/src/dotfiles-bash/bash
 
 Create symbolic links:
 
@@ -35,3 +35,7 @@ Add dependencies:
     git clone https://github.com/seebi/dircolors-solarized.git
 
 Install [dotfiles-vim](https://github.com/gasull/dotfiles-vim).
+
+Install programs I use in my aliases:
+
+    sudo aptitude install mc silversearcher-ag vim-gtk
