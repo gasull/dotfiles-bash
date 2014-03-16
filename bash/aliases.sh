@@ -24,8 +24,6 @@ alias gstatus='git status'
 alias gw='git add'
 
 alias lla='ls -la'
-# Makes Midnight Commander even faster
-alias mc='mc -s'
 alias md='mkdir'
 nd() {
     mkdir $@; cd $1;
