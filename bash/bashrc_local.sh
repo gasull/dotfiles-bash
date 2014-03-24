@@ -13,4 +13,4 @@ fi
 export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 
 # pylint
-export PYLINTRC="$XDG_CONFIG_HOME/pylintrc"
+export PYLINTRC="$XDG_CONFIG_HOME/pylint/pylintrc"
