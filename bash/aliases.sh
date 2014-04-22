@@ -30,7 +30,7 @@ nd() {
 }
 alias ooffice='libreoffice'
 # Low volume to play music on top
-alias pinknoise='play -n synth 1440:00 pinknoise vol 0.01'
+alias pinknoise='play -n synth 1440:00 pinknoise vol 0.03'
 alias psg='ps aux | grep'
 # Works like the old MS-DOS tree command
 alias tree='tree -d'
