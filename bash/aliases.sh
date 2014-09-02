@@ -23,7 +23,7 @@ else
 fi
 
 alias cd..='cd ..'
-alias deltree='rm'
+alias deltree='rm -r'
 alias lla='ls -la'
 alias md='mkdir'
 nd() {
@@ -33,7 +33,7 @@ alias ooffice='libreoffice'
 # Low volume to play music on top
 alias pinknoise='play -n synth 1440:00 pinknoise vol 0.05'
 alias psg='ps aux | grep'
-alias rmtree='rm'
+alias rmtree='rm -r'
 # Works like the old MS-DOS tree command
 alias tree='tree -d'
 alias xv='geeqie'
