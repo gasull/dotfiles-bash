@@ -1,3 +1,9 @@
+# Like in vim-fugitive
+alias Gcommit='git commit'
+alias Gdiff='git diff'
+alias Gstatus='git status'
+alias Gw='git add'
+
 # Use the best code searching tool money can buy
 if [ -x /usr/bin/ag ] ; then
     alias ack='ag'
@@ -17,12 +23,7 @@ else
 fi
 
 alias cd..='cd ..'
-
-# Like in vim-fugitive
-alias gcommit='git commit'
-alias gstatus='git status'
-alias gw='git add'
-
+alias deltree='rm'
 alias lla='ls -la'
 alias md='mkdir'
 nd() {
@@ -32,6 +33,7 @@ alias ooffice='libreoffice'
 # Low volume to play music on top
 alias pinknoise='play -n synth 1440:00 pinknoise vol 0.05'
 alias psg='ps aux | grep'
+alias rmtree='rm'
 # Works like the old MS-DOS tree command
 alias tree='tree -d'
 alias xv='geeqie'
