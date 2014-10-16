@@ -34,6 +34,9 @@ alias ooffice='libreoffice'
 alias pinknoise='play -n synth 1440:00 pinknoise vol 0.05'
 alias psg='ps aux | grep'
 alias rmtree='rm -r'
+tmosh() {
+    mosh $@ -- tmux attach -d
+}
 # Works like the old MS-DOS tree command
 alias tree='tree -d'
 alias xv='geeqie'
