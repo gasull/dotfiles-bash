@@ -34,6 +34,10 @@ alias ooffice='libreoffice'
 alias pinknoise='play -n synth 1440:00 pinknoise vol 0.05'
 alias psg='ps aux | grep'
 alias rmtree='rm -r'
+
+#NB: http://lcamtuf.blogspot.com/2014/10/psa-dont-run-strings-on-untrusted-files.html
+alias strings='strings -a'
+
 tmosh() {
     mosh $@ -- tmux attach -d
 }
