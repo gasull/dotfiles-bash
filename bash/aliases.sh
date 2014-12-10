@@ -23,9 +23,12 @@ else
 fi
 
 alias cd..='cd ..'
+alias cp='cp -i'
 alias deltree='rm -r'
-alias lla='ls -la'
+alias ll='ls -lh'
+alias lla='ls -lah'
 alias md='mkdir'
+alias mv='mv -i'
 nd() {
     mkdir $@; cd $1;
 }
@@ -33,6 +36,7 @@ alias ooffice='libreoffice'
 # Low volume to play music on top
 alias pinknoise='play -n synth 1440:00 pinknoise vol 0.05'
 alias psg='ps aux | grep'
+alias rm='rm -i'
 alias rmtree='rm -r'
 
 #NB: http://lcamtuf.blogspot.com/2014/10/psa-dont-run-strings-on-untrusted-files.html
