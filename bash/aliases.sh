@@ -33,8 +33,11 @@ nd() {
     mkdir $@; cd $1;
 }
 alias ooffice='libreoffice'
-# Low volume to play music on top
-alias pinknoise='play -n synth 1440:00 pinknoise vol 0.05'
+# Low volume to play music on top (24h)
+alias pinknoise='play -n synth 1440:00 pinknoise vol 0.1'
+alias whitenoise='play -n synth 1440:00 whitenoise vol 0.1'
+# To aid sleep (24h)
+alias brownnoise='play -n synth 1440:00 brownnoise vol 0.1'
 alias psg='ps aux | grep'
 alias rm='rm -i'
 alias rmtree='rm -r'
