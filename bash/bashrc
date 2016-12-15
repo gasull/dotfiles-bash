@@ -117,3 +117,9 @@ fi
 if [ -f $XDG_CONFIG_HOME/bash/bashrc_local.sh ]; then
     . $XDG_CONFIG_HOME/bash/bashrc_local.sh
 fi
+
+# Make solarized work in tmux
+# https://github.com/altercation/solarized/issues/159#issuecomment-243174786
+#if [ -n $TMUX ]; then
+#   alias vim="TERM=screen-256color vim"
+#fi

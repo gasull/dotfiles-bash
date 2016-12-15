@@ -16,19 +16,44 @@ else
         # Old systems don't have ack
         alias ack='ack-grep'
     else
-        alias ag='egrep'
-        alias ack='egrep'
-        alias ack-grep='egrep'
+        alias ag='egrep -r'
+        alias ack='egrep -r'
+        alias ack-grep='egrep -r'
     fi
 fi
 
+cat() {
+    source-highlight --out-format=esc -o STDOUT -i "$@" 2> /dev/null || \
+        /bin/cat "$@";
+}
+
 alias cd..='cd ..'
+alias cls=clear
 alias cp='cp -i'
 alias deltree='rm -r'
+if [ -x /usr/bin/colordiff ] ; then
+    alias diff='colordiff'
+fi
 alias ll='ls -lh'
 alias lla='ls -lah'
+
+# Colored man pages
+# https://gist.github.com/cocoalabs/2fb7dc2199b0d4bf160364b8e557eb66
+man() {
+    env \
+        LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+        LESS_TERMCAP_md=$(printf "\e[1;31m") \
+        LESS_TERMCAP_me=$(printf "\e[0m") \
+        LESS_TERMCAP_se=$(printf "\e[0m") \
+        LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+        LESS_TERMCAP_ue=$(printf "\e[0m") \
+        LESS_TERMCAP_us=$(printf "\e[1;32m") \
+            man "$@"
+}
+
 alias md='mkdir'
 alias mv='mv -i'
+alias less='less -r'  # View ANSI
 nd() {
     mkdir $@; cd $1;
 }
