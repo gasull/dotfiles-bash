@@ -54,6 +54,7 @@ man() {
 alias md='mkdir'
 alias mv='mv -i'
 alias less='less -r'  # View ANSI
+alias mem='free -mt'
 nd() {
     mkdir $@; cd $1;
 }
@@ -72,6 +73,9 @@ alias strings='strings -a'
 
 tmosh() {
     mosh $@ -- tmux attach -d
+}
+tmush() {
+    ssh $@ -- tmux attach -d
 }
 # Works like the old MS-DOS tree command
 alias tree='tree -d'
