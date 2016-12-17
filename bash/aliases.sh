@@ -25,7 +25,9 @@ else
 fi
 
 cat() {
-    source-highlight --out-format=esc -o STDOUT -i "$@" 2> /dev/null || \
+    source-highlight --data-dir=$HOME/.source-highlight/ \
+        --style-file=$HOME/.source-highlight/esc-solarized.style \
+        --out-format=esc -o STDOUT -i "$@" 2> /dev/null || \
         /bin/cat "$@";
 }
 
