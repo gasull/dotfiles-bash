@@ -79,7 +79,7 @@ tmosh() {
     mosh $@ -- tmux attach -d
 }
 tmush() {
-    ssh $@ -- tmux attach -d
+    ssh -t $@ tmux attach -d
 }
 # Works like the old MS-DOS tree command
 alias tree='tree -d'
