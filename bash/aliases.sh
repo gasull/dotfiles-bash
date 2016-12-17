@@ -1,8 +1,10 @@
 # Like in vim-fugitive
-alias Gcommit='git commit'
-alias Gdiff='git diff'
-alias Gstatus='git status'
-alias Gw='git add'
+alias gcommit='git commit'
+alias gdiff='git diff'
+alias gstatus='git status'
+alias gw='git add'
+
+alias gst='git status'
 
 # Use the best code searching tool money can buy
 if [ -x /usr/bin/ag ] ; then
