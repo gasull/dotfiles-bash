@@ -56,6 +56,12 @@ man() {
 }
 
 alias md='mkdir'
+# Send emails with UTC timezone
+mutt() {
+    export TZ=UTC;
+    /usr/bin/mutt $@;
+    unset TZ;
+}
 alias mv='mv -i'
 alias less='less -r'  # View ANSI
 alias mem='free -mt'
