@@ -55,7 +55,9 @@ man() {
         LESS_TERMCAP_us=$(printf "\e[1;32m") \
             man "$@"
 }
-
+# Use .mailcap's editor for each file type.
+# No mouse so copypasting is possible.
+alias mc='EDITOR=edit mc --nomouse'
 alias md='mkdir'
 # Send emails with UTC timezone
 mutt() {
