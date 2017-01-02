@@ -38,6 +38,7 @@ alias deltree='rm -r'
 if [ -x /usr/bin/colordiff ] ; then
     alias diff='colordiff'
 fi
+alias geeqie='ristretto'
 alias ll='ls -lh'
 alias lla='ls -lah'
 
@@ -89,4 +90,4 @@ tmush() {
 }
 # Works like the old MS-DOS tree command
 alias tree='tree -d'
-alias xv='geeqie'
+alias xv='ristretto'
